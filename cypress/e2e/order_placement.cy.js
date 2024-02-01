@@ -95,7 +95,8 @@ describe('Order Placement Process', () => {
             .and("have.text", "Thank you for your purchase!")
     });
 
-    it.skip('Order -  Gear product page -  guest user', () => {
+    //This will fail which is a good thing (we catch a bug)
+    it('Order -  Gear product page -  guest user', () => {
 
 
         // Navigate to a product page Gear and add to cart
@@ -272,7 +273,7 @@ describe('Order Placement Process', () => {
 
     });
 
-    it.only("Order cancellation(delete product from the cart) -  What's new product page -   guest user", () => {
+    it("Order cancellation(delete product from the cart) -  What's new product page -   guest user", () => {
 
         // Navigate to a product page Gear and add to cart
         cy.get('#ui-id-5').click();
